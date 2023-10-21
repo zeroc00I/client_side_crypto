@@ -12,11 +12,16 @@ Minor quibble:
    imperiled by other browser problems
 ```
 ```
-I have only heard of one application of JS crypto that made sense,
-but it wasn't from a security perspective. A web firm processes credit card numbers. For cost reasons,
-they wanted to avoid PCI audits of their webservers, but PCI required any server that handled
-plaintext credit card numbers to be audited. So, their webservers send a JS crypto app to the
-browser client to encrypt the credit card number with an RSA public key. The corresponding private key
+I have only heard of one application
+of JS crypto that made sense, but it wasn't
+from a security perspective. A web firm processes
+ credit card numbers. For cost reasons, they wanted
+ to avoid PCI audits of their webservers,
+but PCI required any server that handled
+plaintext credit card numbers to be audited.
+So, their webservers send a JS crypto app to the
+browser client to encrypt the credit card number
+with an RSA public key. The corresponding private key
 is accessible only to the backend database. So based on the
 wording of PCI, only the database server requires an audit.
 ```
